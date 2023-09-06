@@ -3,15 +3,16 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    background-attachment: fixed;
 }
 body{
-background: rgb(90, 145, 109);
+background: #ffecfd(90, 145, 109);
 color: #000000;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/IMG_3149copy.JPG);
+    background-image: url(/Images/pleasework.jpeg);
     background-size: cover;
     background-position: center;
     text-align: left;
@@ -69,7 +70,7 @@ nav ul li a:hover::after{
 .about{
     width: 100%;
     padding: 100px 0px;
-    background-color: aquamarine;
+    background-color: rgb(208, 235, 248);
 }
 .row{
     display: flex;
@@ -89,7 +90,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #073520;
+    color: black;
 }
 .tab-titles{
     display: flex;
@@ -106,7 +107,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #073520;
+    background: black;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -120,6 +121,12 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #073520;
+    color: black;
     font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
