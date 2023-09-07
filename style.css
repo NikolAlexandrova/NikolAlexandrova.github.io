@@ -163,7 +163,7 @@ nav ul li a:hover::after{
     height: 3px;
     background: blue;
     position: absolute;
-    left: 5;
+    left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
