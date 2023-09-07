@@ -10,30 +10,16 @@ body{
 background: #ffecfd(90, 145, 109);
 color: #000000;
 }
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
 #header{
     width: 100%;
     height: 100vh;
     background-color: #b1b273;
     background-size: cover;
     background-position: center;
-    text-align: left;
-}
-
-#header-text{
-    display: flex;
-    flex-basis: 35%;
-    justify-content: space-between;
-    padding: 60px;
-    margin: 10rem auto 0 auto
-}
-.header-text img{
-    height: 500px;
-    border-radius: 15px;
-    width: 100;
-    flex-wrap: wrap;
-}
-.container{
-    padding: 10px 10%;
     
 }
 #header h1{
@@ -44,13 +30,72 @@ color: #000000;
     font-weight: bold;
 }
 
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-img{
+    display: flex;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.home-content p{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 0.5;
+}
+.home-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    text-align: left;
+}
+.social-media a{
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(black);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: black;
+    margin-top: auto;
+    text-align: left;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: white;
+    color: black;
+    box-shadow: 0 0 1rem white;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #F1F1C0;
+    border-radius: 3rem;
+    box-shadow: 0 0 1rem #F1F1C0;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+
 nav{
     width: 100%;
     height: 75px;
     line-height: 75px;
     padding: 0px 100px;
     position: fixed;
-    background-image: linear-gradient(white, #b1b273);
+    background-image: linear-gradient(#F1F1C0, #b1b273);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +109,7 @@ nav li{
         list-style: none;
     }
 nav li a{
-    font-size: 18px;
+    font-size: 50px;
     padding: 0px 30px;
     text-decoration: none;
 }
@@ -97,7 +142,6 @@ nav ul li a::after{
     width: 0;
     height: 3px;
     background: black;
-    /* position: absolute; */
     left: 0;
     bottom: 6px;
     display: block;
@@ -112,11 +156,16 @@ nav ul li a:hover::after{
     margin-top: 20%;
     font-size: 30px;
 }
+.header-text img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
-/* ------------about----------- */
+/* ------------About Me----------- */
 #about{
     padding: 80px 0;
     color: #073520
@@ -183,4 +232,8 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+footer{
+    text-align: center;
+    padding: 10px;
 }
