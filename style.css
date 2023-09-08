@@ -103,6 +103,9 @@ nav{
 }
 nav ul{
         float: right;
+        position: fixed;
+        top:0;
+        width: 100%;
     }
 nav li{
         display: inline-block;
@@ -121,11 +124,12 @@ li a{
     display: block;
     padding: 8px;
 }
-ul{
+/* ul{
     position: fixed;
     top:0;
     width: 100%;
-}
+    text-align: left;
+} */
 nav ul li{
     display: inline-block;
     list-style: none;

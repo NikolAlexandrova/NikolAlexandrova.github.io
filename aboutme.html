@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="header1">
         <div class="container">
@@ -17,7 +19,7 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="aboutme.html">About Me</a></li>
                     <li><a href="profile.html">Home</a></li>
-                
+
                 </ul>
             </nav>
         </div>
@@ -31,7 +33,9 @@
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me</h1>
                     <h1> Personal Information </h1>
-                    <p> My name is Nikol Alexandrova and I am 18 years old. I am from Bulgaria. In my free time I go out with friends, read and watch movies/TV series. Some of my favourire books are Rich Dad Poor Dad and Pride and Prejudice. </p>
+                    <p> My name is Nikol Alexandrova and I am 18 years old. I am from Bulgaria. In my free time I go out
+                        with friends, read and watch movies/TV series. Some of my favourire books are Rich Dad Poor Dad
+                        and Pride and Prejudice. </p>
                     <!-- <h1> Motivate your study choice </h1>
                     <p> I chose to study this programme because it aligns perfectly with my interests. Moreover, it
                         allows me to be flexible - to go study abroad, work a part- time job and travel without worrying
@@ -72,21 +76,22 @@
             </div>
         </div>
         <script>
-        var tablinks = document.getElementsByClassName("tab-links");
+            var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-               for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-               } 
-            
-               for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-               } 
-               event.currentTarget.classList.add("active-link");
-               document.getElementById(tabname).classList.add("active-tab");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
             }
         </script>
     </section>
 
 </body>
+
 </html>
