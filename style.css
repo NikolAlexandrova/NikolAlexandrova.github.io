@@ -11,8 +11,8 @@ background: #ffecfd(90, 145, 109);
 color: #000000;
 }
 section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    min-height: 50vh;
+    padding: 9rem 9% 2rem;
 }
 #header{
     width: 100%;
@@ -91,7 +91,7 @@ section{
 
 nav{
     width: 100%;
-    height: 75px;
+    height: 90px;
     line-height: 75px;
     padding: 0px 100px;
     position: fixed;
@@ -133,7 +133,8 @@ li a{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
+
 }
 
 nav ul li a{
@@ -147,10 +148,9 @@ nav ul li a::after{
     height: 3px;
     background: black;
     left: 0;
-    bottom: 6px;
+    bottom: 2px;
     display: block;
-    margin: auto;
-    
+    margin-top: -20px;
     transition: 0.5s;
 }
 nav ul li a:hover::after{
@@ -171,12 +171,12 @@ nav ul li a:hover::after{
 }
 /* ------------About Me----------- */
 #about{
-    padding: 80px 0;
+    padding: 100px 0;
     color: #073520
 }
 .about{
     width: 100%;
-    padding: 100px 0px;
+    padding: 80px 0px;
     background-color: rgb(208, 235, 248);
 }
 .row{
@@ -186,6 +186,7 @@ nav ul li a:hover::after{
 }
 .about-col-1{
     flex-basis: 35%;
+    margin-top: 20px;
 }
 .about-col-1 img{
     width: 100%;
@@ -193,6 +194,7 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    margin-top: 20px;
 }
 .sub-title{
     font-size: 60px;
@@ -237,7 +239,65 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/* -----------Aside Menu----------- */
+.aside-menu{
+    max-height: 50px;
+    background-color: #F1F1C0;
+    padding: 5rem 9% 2rem;
+    /* overflow-y: auto; */
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 180px;
+    background-color: #F1F1C0;
+    text-align: center;
+
+}
+.bar-container{
+    display: flex;
+    align-items: flex-start;
+}
+.bar-logo{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+.bar-logo a{
+    text-decoration: none;
+    color: #000000;
+    margin: 5px 0;
+}
+.bar-logo li:hover{
+    margin-left: 5px;
+}
+.bar-logo-right{
+    margin-left: 300px;
+}
+.menu{
+    justify-content: space-around;
+}
+.column-image{
+    text-align: right;
+}
+.column-image img{
+    max-width: 100%;
+}
+
+  /* ------------- Footer -------------- */
 footer{
     text-align: center;
-    padding: 10px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
