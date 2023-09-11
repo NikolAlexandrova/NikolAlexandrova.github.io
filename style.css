@@ -164,10 +164,6 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 /* ------------About Me----------- */
-/* #about{
-    padding: 100px 0;
-    background-color: #073520;
-} */
 .about{
     width: 100%;
     height: 725px;
@@ -230,10 +226,11 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #67674f;
-    font-size: 14px;
+    font-size: 15px;
 }
 .tab-contents{
     display: none;
+    font-size: large;
 }
 .tab-contents.active-tab{
     display: block;
@@ -242,12 +239,12 @@ nav ul li a:hover::after{
 .aside-menu{
     max-height: 50px;
     background-color: #F1F1C0;
-    /* padding: 5rem 9% 2rem; */
+    padding: 5rem 9% 2rem;
 }
 .menu{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     padding: 5px;
     width: 100%;
     height: 180px;
@@ -257,7 +254,7 @@ nav ul li a:hover::after{
 }
 .bar-container{
     display: flex;
-    /* align-items: flex-start; */
+    align-items: flex-start;
 }
 .bar-logo ul{
     list-style-type: none;
@@ -342,15 +339,110 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 /* -------------Dashboard---------- */
-table, th, td {
-    border: 1px solid black;
-    margin-top: 250px;
-    margin-left: 210px;
-    font-size: large;
-    width: auto;
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px  rgba(103, 103, 79);
+    background: #fafafa;
+    text-align: center;
+    position: fixed;
+}
+th,td{
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+}
+th{
+    background: #cdcf98;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+td{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+tr:nth-child(odd){
+    background-color: #f1f1d6;
+}
+tr:not(:first-child) {
+    border-left: 1px solid #000; 
+}
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+    display: none; /* Hide the default arrow on IE/Edge */
+}
+
+/* Style the options in the dropdown */
+select option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style the dropdown when it's focused */
+select:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow on focus */
+}
+
+
+
+/* -----------Progress-------- */
+.progress-container{
+    height: 100vh;
+    display: flex;
     align-items: center;
-  }
-  /* ------------- Footer -------------- */
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 220px;
+}
+.progress-container .progress-container{
+    margin-bottom: 25px;
+}
+.progress-container .progress-container h4{
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
+}
+.progress-container .progress-container .progress-bar{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 3px 4px 5px 0px rgb(189, 189, 148);
+}
+.progress-container .progress-container .progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #cdcf98;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(207, 207, 112), rgba(255,255,255) 100%);
+    transition: width .5s linear;
+}
+
+/* ------------- Footer -------------- */
 footer{
     text-align: center;
     padding: 0;

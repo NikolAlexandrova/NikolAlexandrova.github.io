@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <table>
+    <!-- <table>
         <tr>
             <th>Quartile</th>
             <th>Course</th>
@@ -99,7 +99,154 @@
             <td>-</td>
             <td>-</td>
         </tr>
-    </table>
-</body>
+    </table> -->
+    <!-- <div class="filter">
 
+    </div> -->
+    <table>
+        <tr>
+            <th>Quartile</th>
+            <th>Course</th>
+            <th>Grades</th>
+            <th>Exam</th>
+            <th>EC</th>
+        </tr>
+        <tr>
+            <tr>
+                <td>Quartile 1</td>
+                <td>Program and Career Orientention</td>
+                <td>Assesment Website</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Computer Science Basics</td>
+                <td>Written knowladge test</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Programing Basics</td>
+                <td>Case study exam</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Quartile 2</td>
+                <td>Object Oriented programming</td>
+                <td>Presentation/ Case study Exam</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Quartile 3</td>
+                <td>Framework Development 1</td>
+                <td>Case study exam</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Framework project 1</td>
+                <td>Criterium Bases Interview/ assignment/ Case Study Exam</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>7.5</td>
+            </tr> 
+            <tr>
+                <td>Quartile 4</td>
+                <td>Framework project 2</td>
+                <td>Assesment Website</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>ALL</td>
+                <td>Personal Professional Development</td>
+                <td>Final Delivery/ Report of acceptance Test/ IT portfolio</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>12.5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>IT Personality 1</td>
+                <td rowspan="2">Portfolio</td>
+                <td><select>
+                    <option value="Pass">5.5</option>
+                    <option value="Fail">Fail</option>
+                    <option value="Incomplete">Incomplete</option>
+                </select>
+            </td>
+                <td>1.25</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>IT Personality 2</td>
+                <!-- <td>Assesment Website</td> -->
+                <td>x</td>
+                <td>1.25</td>
+            </tr>
+    </table>
+    <div class="progress-container">
+        <div class="progress-container">
+            <h4>NBSA- 45EC Minimum:</h4>
+            <div class="progress-bar">
+                <span data-width="40%"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const spans = document.querySelectorAll(".progress-bar span")
+        spans.forEach((span) => {
+            span.style.width = span.dataset.width;
+            span.innerHTML = span.dataset.width;
+        });
+
+    </script>
+
+</body>
+<footer>
+    <p>&copy&nbsp;2023&nbsp;Nikol&nbsp;Alexandrova</p>
+</footer>
 </html>
