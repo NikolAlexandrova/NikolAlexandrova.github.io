@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,8 +25,73 @@
             </nav>
         </div>
     </div>
+
+    <div class="questions-image">
+        <img src="/Images/pexels-ann-h-10988368-removebg-preview.png">
+    </div>
+    <div class="container-fluid">
+        <h2>Frequently Asked Questions(FAQs)</h2>
+        <div class="accordion">
+            <div class="icon"><i class='bx bx-plus'></i></div>
+            <h5>How can you print a document from your laptop at HZ?</h5>
+        </div>
+        <div class="panel">
+            <p>nwenfmeowfnmeoifmerklckonfreof</p>
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>How can you scan a document and send it to your laptop at HZ?</h5>
+        </div>
+        <div class="panel">
+            <p></p>
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?</h5>
+        </div>
+        <div class="panel">
+            <p></p>
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>How can you book a project space in one of the wings?</h5>
+        </div>
+        <div class="panel">
+            <p></p>
+        </div>
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>What are the instructions if you want to park your car at the HZ parking lot?</h5>
+        </div>
+        <div class="panel">
+            <p></p>
+        </div>
+    </div>
+    <script>
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        var len = acc.length;
+        for (i = 0; i < len; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+    </script>
+
+    <!-- <footer class="faq-footer">
+        <p>&copy&nbsp;2023&nbsp;Nikol&nbsp;Alexandrova</p>
+    </footer> -->
 </body>
-<footer>
-    <p>&copy&nbsp;2023&nbsp;Nikol&nbsp;Alexandrova</p>
-</footer>
+
 </html>

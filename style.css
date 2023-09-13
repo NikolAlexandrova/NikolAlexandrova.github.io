@@ -31,14 +31,16 @@ section{
 /* -----------home------------ */
 .home{
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
 }
-.home-img{
+/*.home-img{
     display: flex;
     margin-right: 20px;
     border-radius: 15px;
+}*/
+.header-profile-image{
+    border-radius: 150px 30px 150px 30px;
 }
 .home-content p{
     font-size: 30px;
@@ -75,16 +77,19 @@ section{
     box-shadow: 0 0 1rem white;
 }
 .btn{
-    display: inline-block;
+    display: block;
     padding: 1rem 2.8rem;
     background: #F1F1C0;
     border-radius: 3rem;
-    box-shadow: 0 0 1rem #F1F1C0;
+    box-shadow: 0 0 25px #F1F1C0;
     font-size: 1rem;
-    color: black;
+    color: #2b2b04;
     letter-spacing: .1rem;
     font-weight: 300;
-    margin-top: 60px
+    margin-top: 60px;
+    text-decoration: none;
+    text-align: center;
+    width: 220px;
 }
 .btn:hover{
     box-shadow: none;
@@ -105,12 +110,12 @@ nav{
 }
 nav ul{
         float: right;
-        position: fixed;
+        position: absolute;
         top:0;
         width: 100%;
     }
 nav li{
-        display: inline-block;
+        /*display: inline-block;*/
         list-style: none;
         float: right;
     }
@@ -171,7 +176,7 @@ nav ul li a:hover::after{
     height: 780px;
     padding: 70px 0px;
     margin-bottom: 0%;
-    background-color: #cdcf98;
+    background-color: white;
 }
 .row{
     display: flex;
@@ -219,7 +224,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(241, 241, 192);
+    background: #999a64;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -234,7 +239,7 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 .tab-contents ul li span{
-    color: #F1F1C0;
+    color: #999a64;
     font-size: 23px;
     font-weight: 500;
 }
@@ -247,16 +252,33 @@ nav ul li a:hover::after{
 }
 /* ------------About ICT Section----------- */
 .personal-information{
-    font-size: large;
+    font-size: 20px;
     background-color: #F1F1C0;
     text-align: center;
+    color: #000;
+    
+}
+.personal-information h2{
+    margin-top: 2%;
+}
+.personal-information hr{
+    margin-top: 2%; 
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    border: 1px solid black;
+    
+}
+.personal-information a{
+    color: black;
+    margin-bottom: 50%;
 }
 /* -----------Aside Menu----------- */
 .aside-menu{
     max-height: 100px;
     background-color: #F1F1C0;
     padding: 5rem 9% 2rem;
-    font-size: large;
+    font-size: 18px;
 }
 .menu{
     display: flex;
@@ -264,7 +286,7 @@ nav ul li a:hover::after{
     align-items: center;
     padding: 5px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color: #F1F1C0;
     text-align: center;
 
@@ -328,8 +350,15 @@ nav ul li a:hover::after{
 .blog-sub-title{
     text-align: center;
     font-family:'Times New Roman', Times, serif;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
+.container hr{
+    height: 4px; 
+    width: 50%;
+    background-color: black;
+    margin: 0 auto;
+}
+
 .blog-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -344,16 +373,23 @@ nav ul li a:hover::after{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 200px;
+    box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.5); 
 }
-.blog img{
+.image-container {
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+.image-container img {
     width: 100%;
-    border-radius: 10px;
-    display: block;
-    margin-top: 40%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 .layer{
     width: 100%;
-    height: 100%;
+    height: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.6), #cdcf98);
     border-radius: 10px;
     position: absolute;
@@ -363,17 +399,41 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 30px 40px;
     text-align: center;
+    font-size: 16px;
+    transition: transform 0.4s;
+    transform: scaleY(0); 
+    transform-origin: top;
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #b1b273;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    text-align: center;
+}
+.post:hover img{
+    transform: scale(1.1);
+}
+.post:hover .layer{
+    
+    transform: scaleY(1);
+    height: 100%; 
 }
 
 /* -------------Dashboard---------- */
 table{
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 47%;
-    transform: translate(-50%,-50%);
     width: 60%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -382,7 +442,9 @@ table{
     box-shadow: 0 2px 12px  rgba(103, 103, 79);
     background: #fafafa;
     text-align: center;
-    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
 }
 th,td{
     padding: 10px 15px;
@@ -451,11 +513,94 @@ select {
     transition: width .5s linear;
 }
 
+/* --------------FAQ------------- */
+.questions-image{
+    float: left;
+    margin-left: 10%;
+}
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 14%;
+    float: right;
+    margin-right: 5%;
+}
+.container-fluid h2{
+    color: black;
+    position: relative;
+    width: 23rem;
+    text-align: center;
+    margin-left: 15%;
+}
+.container-fluid h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: #999a64;
+}
+.accordion{
+    width: 100%;
+    padding: 0 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.accordion .icon{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(/Images/plus.png) no repeat 8px 7px #cdcf98;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+
+}
+.accordion h5{
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #b1b273;
+    transition: all .5s ease-in;
+}
+.active .icon{
+    /* background: url(/Images/minus.jpeg) no-repeat 8px -25px #cdcf98; */
+}
+.active{
+    background-color: #f1f1d6;
+    color: #F1F1C0;
+}
+.active h5{
+    color: #ec3dba;
+}
+.panel{
+    padding: 0 15px;
+    border-left: 1px solid #b1b273;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+/* .faq-footer{
+    margin-top: 20%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 5px;
+} */
+
 /* ------------- Footer -------------- */
 footer{
     text-align: center;
     padding: 0;
     margin-top: 5px;
-    margin-bottom: 5px;
+
     
 }
