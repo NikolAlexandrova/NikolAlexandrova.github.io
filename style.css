@@ -362,7 +362,7 @@ nav ul li a:hover::after{
 .blog-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-gap:50px;
+    /* grid-gap:50px; */
     margin-top: 50px;
     
 }
@@ -370,8 +370,8 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
     margin-bottom: 200px;
     box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.5); 
 }
@@ -474,14 +474,14 @@ select {
     color: #333;
 }
 
+
 /* -----------Progress-------- */
 .progress-container{
-    height: 100vh;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 220px;
 }
 .progress-container .progress-container{
     margin-bottom: 25px;
@@ -551,15 +551,15 @@ select {
     margin: 10px 0;
     align-items: center;
 }
-.accordion .icon{
-    margin: 0 10px 0 0;
+ .accordion .icon{
+    margin: 0 20px 0 0;
     width: 30px;
     height: 30px;
-    background: url(/Images/plus.png) no repeat 8px 7px #cdcf98;
+    /* background: url(/Images/plus.png) no repeat 8px 7px #cdcf98; */
     border-radius: 50%;
     float: left;
     transition: all .5s ease-in;
-
+    font-size: 30px;
 }
 .accordion h5{
     font-size: 22px;
@@ -569,8 +569,9 @@ select {
     color: #b1b273;
     transition: all .5s ease-in;
 }
-.active .icon{
-    /* background: url(/Images/minus.jpeg) no-repeat 8px -25px #cdcf98; */
+.accordion .active .icon{
+    font-family: "Font Awesome 6";
+    content: "\f068";
 }
 .active{
     background-color: #f1f1d6;
