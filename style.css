@@ -34,11 +34,6 @@ section{
     align-items: center;
     justify-content: space-around;
 }
-/*.home-img{
-    display: flex;
-    margin-right: 20px;
-    border-radius: 15px;
-}*/
 .header-profile-image{
     border-radius: 150px 30px 150px 30px;
 }
@@ -72,7 +67,7 @@ section{
     transition: .5s ease;
 }
 .social-media a:hover{
-    background: white;
+    background: #F1F1C0;
     color: black;
     box-shadow: 0 0 1rem white;
 }
@@ -115,7 +110,6 @@ nav ul{
         width: 100%;
     }
 nav li{
-        /*display: inline-block;*/
         list-style: none;
         float: right;
     }
@@ -126,7 +120,6 @@ nav li a{
 }
 li{
     display: block;
-    /* float: right; */
 }
 li a{
     display: block;
@@ -202,7 +195,6 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-size: 22px;
-    /* padding-left: 3%; */
     padding-right: 5%;
 }
 .sub-title{
@@ -259,6 +251,7 @@ nav ul li a:hover::after{
     color: #000;
     
 }
+
 .personal-information h2{
     margin-top: 2%;
 }
@@ -302,7 +295,6 @@ nav ul li a:hover::after{
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* border-top: 1px solid #000; */
     padding-top: 45px;
     position: relative;
 }
@@ -312,7 +304,7 @@ nav ul li a:hover::after{
     margin: 3px 0;
 }
 .bar-logo li a:hover{
-    color: #ec3dba;
+    color: #F1F1C0;
     position: relative;
 }
 
@@ -381,10 +373,7 @@ nav ul li a:hover::after{
     border-radius: 1em;
     background: #ECE9E6;
   background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-  /* margin-top: 10%; */
   }
-  
-  
   
   .card__body {
     padding: 1rem;
@@ -392,7 +381,6 @@ nav ul li a:hover::after{
     flex-direction: column;
     gap: .5rem;
   }
-  
   
   .tag {
     align-self: flex-start;
@@ -570,7 +558,6 @@ select {
     margin: 0 20px 0 0;
     width: 30px;
     height: 30px;
-    /* background: url(/Images/plus.png) no repeat 8px 7px #cdcf98; */
     border-radius: 50%;
     float: left;
     transition: all .5s ease-in;
@@ -593,24 +580,18 @@ select {
     color: #F1F1C0;
 }
 .active h5{
-    color: #ec3dba;
+    color: #414f2c;
 }
 .panel{
     padding: 0 15px;
     border-left: 1px solid #b1b273;
     margin-left: 25px;
-    font-size: 14px;
+    font-size: 19px;
     text-align: justify;
     overflow: hidden;
     max-height: 0;
     transition: all .5s ease-in;
 }
-/* .faq-footer{
-    margin-top: 20%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 5px;
-} */
 
 /* ------------- Footer -------------- */
 footer{
